@@ -1,0 +1,100 @@
+.contact-welcome {
+  text-align: center;
+  padding: 100px var(--padding-default);
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 20vw;
+    margin-bottom: 30px;
+    font-weight: 500;
+    @media (min-width: 576px) {
+      font-size: 15vw;
+    }
+    @media (min-width: 992px) {
+      font-size: 13rem;
+    }
+  }
+  &__subtitle {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.contact-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__card {
+    margin: var(--padding-default);
+    background-color: var(--hover-color);
+    border-radius: 15px;
+    transform: translateY(70px);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
+
+    opacity: 0;
+    transition:
+      opacity 0.5s ease-in-out,
+      transform 0.5s linear;
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__link {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    white-space: nowrap;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    @media (min-width: 768px) {
+      font-size: 2.6rem;
+      width: 420px;
+    }
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  &__img {
+    padding-bottom: 20px;
+    width: 45px;
+    // height: 50px;/
+  }
+}
+
+.contact-goodbay {
+  margin: 110px var(--padding-default) 50px;
+  &__title {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 8vw;
+    font-weight: 500;
+    @media (min-width: 576px) {
+      font-size: 7vw;
+    }
+    @media (min-width: 992px) {
+      font-size: 5rem;
+    }
+  }
+}

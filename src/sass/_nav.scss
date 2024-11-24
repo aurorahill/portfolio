@@ -1,0 +1,125 @@
+.nav {
+  background-color: var(--primary-nav-background);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__wrapper {
+    position: relative;
+    max-width: 1400px;
+    padding: var(--padding-default);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    color: var(--text-color);
+    font-size: 3.5rem;
+    line-height: 1;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--hover-color);
+    }
+
+    @media (min-width: 992px) {
+      position: absolute;
+      top: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__mode-btn {
+    margin-right: 10px;
+    white-space: nowrap;
+
+    @media (min-width: 992px) {
+      margin: 0 5px;
+    }
+  }
+
+  &__menu-btn {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__links {
+    padding: 15px 0;
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 40vw);
+    transform: translateY(-150%);
+    width: 80vw;
+    background-color: var(--hover-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    @media (min-width: 992px) {
+      padding: 0 0;
+      position: relative;
+      top: 0;
+      left: auto;
+      transform: translateY(0);
+      flex-direction: row;
+      justify-content: start;
+      flex-grow: 1;
+      background-color: transparent;
+    }
+
+    &.show {
+      transform: translateY(0);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 5px var(--padding-default);
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    text-align: center;
+    border-radius: 10px;
+    font-family: var(--secondary-font);
+
+    @media (min-width: 992px) {
+      font-family: var(--primary-font);
+      font-size: 1.4rem;
+      border: 1px solid var(--text-color);
+      margin: 0 5px;
+      padding: 8px 15px;
+      border-radius: 24px;
+
+      &:last-of-type {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+
+      @media (min-width: 992px) {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+}

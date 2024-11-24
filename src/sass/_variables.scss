@@ -1,0 +1,19 @@
+:root {
+  // Dark mode colors
+  --text-color: #eff2f6;
+  --primary-color: rgb(19, 21, 23);
+  --hover-color: #353538;
+  --padding-default: 2rem;
+  --primary-nav-background: rgba(19, 21, 23, 0.6);
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+}
+
+.light_mode {
+  --text-color: #1d4672;
+  --primary-color: rgb(230, 227, 238);
+  --primary-color: rgb(227, 229, 238);
+  --hover-color: #e9ecef;
+  --primary-nav-background: rgba(230, 227, 238, 0.6);
+  --primary-nav-background: rgba(227, 229, 238, 0.6);
+}

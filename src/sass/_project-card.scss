@@ -1,0 +1,66 @@
+.projects-section {
+  &__list {
+    list-style: none;
+  }
+}
+.card {
+  padding: var(--padding-default);
+  text-align: center;
+  max-width: 550px;
+  margin: 60px auto;
+  transform: translateY(70px);
+  opacity: 0;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s linear;
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 3.2rem;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    padding: var(--padding-default) 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    @media (min-width: 992px) {
+      font-size: 2.2rem;
+    }
+  }
+  &__content {
+    padding: 10px;
+    background-color: var(--hover-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
+  }
+  &__image-wrapper {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: var(--hover-color);
+    border-radius: 15px;
+  }
+  &__image {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  &__links {
+    padding: 10px;
+  }
+  &__link {
+    margin: 0 var(--padding-default);
+    color: var(--text-color);
+    font-size: 4rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

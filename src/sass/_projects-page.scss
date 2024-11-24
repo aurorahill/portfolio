@@ -1,0 +1,30 @@
+.projects-welcome {
+  text-align: center;
+  padding: 100px var(--padding-default);
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 20vw;
+    margin-bottom: 30px;
+    font-weight: 500;
+    @media (min-width: 576px) {
+      font-size: 15vw;
+    }
+    @media (min-width: 992px) {
+      font-size: 13rem;
+    }
+  }
+  &__subtitle {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+
