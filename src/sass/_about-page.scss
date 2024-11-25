@@ -101,6 +101,7 @@
     transform: rotate(-7deg) skew(-7deg);
     border-top: 10px solid var(--hover-color);
     border-bottom: 10px solid var(--hover-color);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
     @media (min-width: 576px) {
       margin: 180px auto;
     }
@@ -145,6 +146,7 @@
     transform: skew(7deg);
     margin: 15px 10px;
     background-color: var(--hover-color);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
     border-radius: 20px;
     filter: saturate(50%);
     @media (min-width: 768px) {
@@ -216,7 +218,82 @@
     }
   }
 }
+.about-dev {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  @media (min-width: 992px) {
+    padding: 0 var(--padding-default);
+  }
+  &__wrapper {
+    padding: var(--padding-default);
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      justify-content: center;
+      gap: calc(var(--padding-default) * 3);
+    }
+  }
+  &__list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 992px) {
+      padding-top: var(--padding-default);
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+  &__element {
+    position: relative;
+    padding: var(--padding-default) 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--text-color);
+      border-radius: inherit;
+      opacity: 0.1;
+      z-index: -1;
+      transition: opacity 0.2s ease-in-out;
+    }
 
+    &:after {
+      @include background-noise;
+    }
+
+    &:hover > svg {
+      transform: scale(0.9);
+    }
+    &:hover:before {
+      opacity: 0.2;
+    }
+  }
+  & svg {
+    width: 70px;
+    height: 70px;
+    filter: saturate(50%);
+    transition: transform 0.2s ease-in-out;
+  }
+  &__element-text {
+    padding-top: 10px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+}
 @keyframes slide {
   from {
     transform: translateX(0);

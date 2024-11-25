@@ -48,7 +48,7 @@ const projectList = [
   {
     title: 'Gemini Clone',
     content:
-      'A simpler version of Gemini chatbot using the Google Chat API create using HTML, SASS, JavaScript and Webpack',
+      'A simplified version of the Gemini chatbot was created using the Google Chat API, along with HTML, SASS, JavaScript, and Webpack',
     img: projectImg3,
     alt: 'Malinka confectionery website',
     githubUrl: 'https://github.com/aurorahill/gemini-clone',

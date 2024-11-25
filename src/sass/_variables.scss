@@ -1,7 +1,7 @@
 :root {
   // Dark mode colors
   --text-color: #eff2f6;
-  --primary-color: rgb(19, 21, 23);
+  --primary-color: #131517;
   --hover-color: #353538;
   --padding-default: 2rem;
   --primary-nav-background: rgba(19, 21, 23, 0.6);
@@ -12,8 +12,22 @@
 .light_mode {
   --text-color: #1d4672;
   --primary-color: rgb(230, 227, 238);
-  --primary-color: rgb(227, 229, 238);
   --hover-color: #e9ecef;
   --primary-nav-background: rgba(230, 227, 238, 0.6);
   --primary-nav-background: rgba(227, 229, 238, 0.6);
+}
+
+@mixin background-noise {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  left: -30%;
+  right: -30%;
+  border-radius: inherit;
+  background: transparent url('../images/noise.png') repeat 0 0;
+  opacity: 0.7;
+  z-index: -1;
+  animation: bg-animation 0.4s infinite;
 }

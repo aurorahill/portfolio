@@ -44,7 +44,6 @@
     border-radius: 15px;
     transform: translateY(70px);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.03);
-
     opacity: 0;
     transition:
       opacity 0.5s ease-in-out,
@@ -79,7 +78,6 @@
   &__img {
     padding-bottom: 20px;
     width: 45px;
-    // height: 50px;/
   }
 }
 
