@@ -15,11 +15,21 @@ import projectImg8 from '../images/little-lemon_600.jpg';
 import projectImg9 from '../images/color-board_600.jpg';
 import projectImg10 from '../images/brainwave_600.jpg';
 import projectImg11 from '../images/portfolio_600.jpg';
+import projectImg12 from '../images/find-coach_600.jpg';
 import '../components/handleScroll';
 import { handleScroll } from '../components/handleScroll';
 import { createProjectCard } from '../components/createProjectCard';
 
 const projectList = [
+  {
+    title: 'Find a Coach',
+    content:
+      'SPA created in VUe curse using: using: Vue3, Vuex, Vue Router, Firebase, Firebase Realtime Database, Firebase Authentication and Firebase Hosting',
+    img: projectImg12,
+    alt: 'Find a Coach',
+    githubUrl: 'https://github.com/aurorahill/coach-list-project',
+    url: 'https://coach-project-824fc.web.app/',
+  },
   {
     title: 'Music Player',
     content: 'Beautiful music player created with React.js and Vite',
