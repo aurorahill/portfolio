@@ -24,7 +24,7 @@ const projectList = [
   {
     title: 'Find a Coach',
     content:
-      'SPA created in VUe curse using: using: Vue3, Vuex, Vue Router, Firebase, Firebase Realtime Database, Firebase Authentication and Firebase Hosting',
+      'SPA created in VUE curse using: Vue3, Vuex, Vue Router, Firebase Realtime Database, Firebase Authentication and Firebase Hosting',
     img: projectImg12,
     alt: 'Find a Coach',
     githubUrl: 'https://github.com/aurorahill/coach-list-project',
