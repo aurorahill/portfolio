@@ -16,11 +16,21 @@ import projectImg9 from '../images/color-board_600.jpg';
 import projectImg10 from '../images/brainwave_600.jpg';
 import projectImg11 from '../images/portfolio_600.jpg';
 import projectImg12 from '../images/find-coach_600.jpg';
+import projectImg13 from '../images/react-blog_600.jpg';
 import '../components/handleScroll';
 import { handleScroll } from '../components/handleScroll';
 import { createProjectCard } from '../components/createProjectCard';
 
 const projectList = [
+  {
+    title: 'Family Blog',
+    content:
+      'This project is a fully functional blog react application where users can create, view, and comment on blog posts. It features user authentication and secure data storage via Firebase.',
+    img: projectImg13,
+    alt: 'Family Blog',
+    githubUrl: 'https://github.com/aurorahill/react-firebase-blog',
+    url: 'https://react-blog-app-c9c57.web.app/',
+  },
   {
     title: 'Find a Coach',
     content:
@@ -41,7 +51,7 @@ const projectList = [
   {
     title: 'Malinka',
     content:
-      'Multipage website for confectionery create using HTML, SASS, JavaScript and Webpack',
+      'Multipage website for confectionery created using HTML, SASS, JavaScript and Webpack',
     img: projectImg2,
     alt: 'Malinka confectionery website',
     githubUrl: 'https://github.com/aurorahill/cukiernia-malinka',
@@ -49,7 +59,7 @@ const projectList = [
   },
   {
     title: 'Portfolio',
-    content: 'My portfolio create using HTML, SASS, JavaScript and Webpack',
+    content: 'My portfolio created using HTML, SASS, JavaScript and Webpack',
     img: projectImg11,
     alt: 'My portfolio',
     githubUrl: 'https://github.com/aurorahill/portfolio',
@@ -67,7 +77,7 @@ const projectList = [
   {
     title: 'Koryl MEBLE',
     content:
-      'Landing page for carpentry company create using HTML, SASS, JavaScript and Webpack',
+      'Landing page for carpentry company created using HTML, SASS, JavaScript and Webpack',
     img: projectImg4,
     alt: 'Koryl Meble company website',
     githubUrl: 'https://github.com/aurorahill/koryl-meble',
@@ -76,7 +86,7 @@ const projectList = [
   {
     title: 'Currency Converter',
     content:
-      'Web application using the free API of the National Bank of Poland create using React and Vite',
+      'Web application using the free API of the National Bank of Poland created with React and Vite',
     img: projectImg5,
     alt: 'Currency converter application',
     githubUrl: 'https://github.com/aurorahill/currency-converter',

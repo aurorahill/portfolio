@@ -1,4 +1,6 @@
 .projects-section {
+  margin: 0 auto;
+  max-width: 1400px;
   &__list {
     list-style: none;
   }
@@ -16,6 +18,26 @@
   &.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 100%;
+  }
+  &:nth-child(even) {
+    @media (min-width: 992px) {
+      // display: flex;
+      flex-direction: row-reverse;
+      gap: 4rem;
+      max-width: 100%;
+    }
+  }
+  &__wrapper {
+    @media (min-width: 992px) {
+      max-width: 45%;
+    }
   }
   &__title {
     font-family: var(--secondary-font);

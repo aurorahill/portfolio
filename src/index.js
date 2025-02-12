@@ -8,10 +8,20 @@ import projectIntroImg1 from './images/currency-converter_600.jpg';
 import projectIntroImg2 from './images/cukiernia-malinka_600.jpg';
 import projectIntroImg3 from './images/to-do-list_600.jpg';
 import projectIntroImg4 from './images/koryl-meble_600.jpg';
+import projectIntroImg5 from './images/react-blog_600.jpg';
 import { createProjectCard } from './components/createProjectCard';
 import { handleScroll } from './components/handleScroll';
 
 const projectIntroList = [
+  {
+    title: 'Family Blog',
+    content:
+      'This project is a fully functional blog react application where users can create, view, and comment on blog posts. It features user authentication and secure data storage via Firebase.',
+    img: projectIntroImg5,
+    alt: 'Family Blog',
+    githubUrl: 'https://github.com/aurorahill/react-firebase-blog',
+    url: 'https://react-blog-app-c9c57.web.app/',
+  },
   {
     title: 'Currency Converter',
     content:
