@@ -63,7 +63,7 @@ const projectList = [
     img: projectImg11,
     alt: 'My portfolio',
     githubUrl: 'https://github.com/aurorahill/portfolio',
-    url: '../index.html',
+    url: 'https://aurorahill.github.io/portfolio/',
   },
   {
     title: 'Gemini Clone',
